@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleMart - Your Fashion Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div class="welcome-popup" id="welcomePopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()" aria-label="Close popup">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="popup-media">
+                <img src="https://i.postimg.cc/59gJCNrG/20250222-011750.jpg" alt="Welcome to StyleMart" class="popup-image" loading="lazy">
+            </div>
+            <div class="popup-text">
+                <h2 id="popupTitle">Welcome to StyleMart! 🛍️</h2>
+                <p class="popup-subtitle">Your Ultimate Fashion Destination</p>
+                <div class="popup-features">
+                    <div class="feature">
+                        <i class="fas fa-tag"></i>
+                        <span>Exclusive Deals</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-medal"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                </div>
+                <button class="popup-button primary-button" onclick="closePopup()">
+                    <span>Start Shopping</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>StyleMart</h1>
+            </div>
+            <div class="nav-items">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#search" title="Search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#account" title="My Account">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#cart" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Welcome to StyleMart</span>
+            <h1>Discover Your Perfect Style</h1>
+            <p>Exclusive Collection | Premium Quality | Best Prices</p>
+            <div class="hero-buttons">
+                <a href="#shop" class="cta-button primary">Shop Now</a>
+                <a href="#collection" class="cta-button secondary">New Collection</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature-item">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-undo"></i>
+                <span>30 Days Return</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lock"></i>
+                <span>Secure Payment</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending">
+        <div class="section-header">
+            <h2>Trending Now</h2>
+            <p>Discover our most popular items</p>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Sport Shoes">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Nike Red Running Shoes</h3>
+                    <p class="description">Limited Edition Sport Collection</p>
+                    <p class="price">$129.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="Camera Lens">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Professional Camera Lens</h3>
+                    <p class="description">50mm f/1.8 Prime Lens</p>
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://vibegaming.com.bd/wp-content/uploads/2024/02/g733-white-01-500x500-1.webp" alt="Gaming Headset">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>RGB Gaming Headset</h3>
+                    <p class="description">7.1 Surround Sound System</p>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images-cdn.ubuy.co.in/653dca4638b3b6351c03b03e-smart-watch-for-android-and-iphone.jpg" alt="Smart Watch">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Smart Watch Pro</h3>
+                    <p class="description">Fitness & Health Tracker</p>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Wireless Headphones">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Premium Headphones</h3>
+                    <p class="description">Active Noise Cancelling</p>
+                    <p class="price">$249.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Sunglasses">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Designer Sunglasses</h3>
+                    <p class="description">UV Protection Eyewear</p>
+                    <p class="price">$159.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083" alt="Mechanical Keyboard">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Gaming Keyboard</h3>
+                    <p class="description">Mechanical RGB Keys</p>
+                    <p class="price">$139.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Camera">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Polaroid Camera</h3>
+                    <p class="description">Instant Photo Printing</p>
+                    <p class="price">$179.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="Sports">
+                <h3>Sports</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f" alt="Lifestyle">
+                <h3>Lifestyle</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="newsletter-text">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get 10% off your first purchase and stay updated with our latest offers!</p>
+            </div>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-box">
+                <i class="fas fa-medal"></i>
+                <h3>Premium Quality</h3>
+                <p>Only the finest materials and craftsmanship</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-tags"></i>
+                <h3>Best Prices</h3>
+                <p>Competitive prices for premium products</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable shipping worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>StyleMart is your premier destination for fashion and accessories.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@stylemart.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> 2025 StyleMart. All rights reserved. Made by <a href="https://wa.me/8801631417328" target="_blank">Abdur Rahman</a></p>
+        </div>
+    </footer>
+        <!-- Add this before closing body tag -->
+        <script src="js/script.js"></script>
+</body>
+</html>
